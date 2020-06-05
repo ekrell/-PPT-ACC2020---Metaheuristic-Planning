@@ -207,7 +207,7 @@
     
 \end{frame}
 
-\begin{frame}{Environment for Simulation Experiments}
+\begin{frame}{Environment for simulation experiments}
     \begin{columns}
         \begin{column}{0.5\textwidth}
         \centering
@@ -225,9 +225,11 @@
             \includegraphics[width=\textwidth,trim={0cm 0cm 0cm 0cm},clip]{img/full_water_2.png}
         \end{column}
     \end{columns}
+    {\tiny The Northeast Coastal Ocean Forecast System (NECOFS): 
+    \url{fvcom.smast.umassd.edu/necofs/}}
 \end{frame}
 
-\begin{frame}{Environment}
+\begin{frame}{Environment: simulated entities over time}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \includegraphics[width=\textwidth,trim={0cm 0cm 0cm 0cm},clip]{img/e1.png}
@@ -263,6 +265,8 @@
             \includegraphics[width=\textwidth,trim={0cm 0cm 0cm 0cm},clip]{img/FP2_box.png}
         \end{column}
     \end{columns}
+    {\tiny A* solution with 8-way grid: 130 secs. Each PSO generation: $\sim 1$ sec.}
+        
 \end{frame}
 
 \begin{frame}{Comparing efficiency of PSO to A* for energy-minimizing planning}
@@ -282,6 +286,7 @@
             \includegraphics[width=\textwidth,trim={0cm 0cm 0cm 0cm},clip]{img/FP1_box.png}
         \end{column}
     \end{columns}
+        {\tiny A* solution with 8-way grid: 100 secs. Each PSO generation: $\sim 1$ sec.}
 \end{frame}
 
 \begin{frame}{Incorporating reward maximization}
@@ -290,7 +295,7 @@
             \includegraphics[width=1.2\textwidth,trim={3cm 0cm 0cm 0cm},clip]{img/paths_FP1_RW0.1.png}
         \end{column}
         \begin{column}{0.31\textwidth}
-            \includegraphics[width=\textwidth,trim={0cm 0cm 2.5cm 0cm},clip]{img/FP1_RW0.1_convergence.png}
+            \includegraphics[width=1.2\textwidth,trim={0cm 0cm 2.5cm 0cm},clip]{img/FP1_RW0.1_convergence.png}
         \end{column}
         \begin{column}{0.37\textwidth}
             \includegraphics[width=\textwidth,trim={0cm 0cm 0cm 0cm},clip]{img/FP1_RW0.1__box.png}
@@ -301,12 +306,13 @@
             \includegraphics[width=1.2\textwidth,trim={3cm 0cm 0cm 0cm},clip]{img/paths_FP1_RW10.png}
         \end{column}
         \begin{column}{0.31\textwidth}
-            \includegraphics[width=\textwidth,trim={0cm 0cm 2.5cm 0cm},clip]{img/FP1_RW10_convergence.png}
+            \includegraphics[width=1.2\textwidth,trim={0cm 0cm 2.5cm 0cm},clip]{img/FP1_RW10_convergence.png}
         \end{column}
         \begin{column}{0.37\textwidth}
             \includegraphics[width=\textwidth,trim={0cm 0cm 0cm 0cm},clip]{img/FP1_RW10_box.png}
         \end{column}
-    \end{columns} 
+    \end{columns}
+    {\tiny Each generation: $\sim 1$ second}
 \end{frame}
 \begin{frame}{Collecting data to update maps}
     \begin{itemize}
@@ -384,6 +390,7 @@
 \end{frame}
 \begin{frame}{Conclusions}
     \begin{enumerate}
+      \setlength\itemsep{2em}
         \item Analyst: target \& reward assignment
         \begin{itemize}
             \item Data-generic technique proposed
